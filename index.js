@@ -8,9 +8,10 @@ app.use(cors())
 
 var server = http.createServer(app);
 // http://localhost:3000
+// https://chat-render-stfc.onrender.com
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-render-stfc.onrender.com",
+    origin: "https://sanchat.netlify.app/",
     methods: ["GET", "POST"]
   }
 });
