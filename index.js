@@ -11,7 +11,7 @@ var server = http.createServer(app);
 // https://chat-render-stfc.onrender.com
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: "https://sanchat.netlify.app.",
     methods: ["GET", "POST"]
   }
 });
